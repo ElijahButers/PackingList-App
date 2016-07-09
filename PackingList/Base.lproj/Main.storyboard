@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="61"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Packing List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Kb-Hr-6mT">
-                                        <rect key="frame" x="244" y="17" width="113" height="26"/>
+                                        <rect key="frame" x="244" y="22" width="113" height="26"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -30,7 +30,7 @@
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="2P7-Z7-KUR"/>
-                                    <constraint firstItem="4Kb-Hr-6mT" firstAttribute="centerY" secondItem="1HM-Hv-IJI" secondAttribute="centerY" id="XII-c0-Fqr"/>
+                                    <constraint firstItem="4Kb-Hr-6mT" firstAttribute="centerY" secondItem="1HM-Hv-IJI" secondAttribute="centerY" constant="5" id="XII-c0-Fqr"/>
                                     <constraint firstItem="4Kb-Hr-6mT" firstAttribute="centerX" secondItem="1HM-Hv-IJI" secondAttribute="centerX" id="sgr-QQ-9kD"/>
                                 </constraints>
                             </view>
