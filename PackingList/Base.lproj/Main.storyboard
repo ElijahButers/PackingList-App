@@ -26,8 +26,8 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBb-mV-I45">
-                                        <rect key="frame" x="572" y="20" width="20" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBb-mV-I45">
+                                        <rect key="frame" x="562" y="12" width="30" height="45"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <state key="normal" title="+"/>
                                     </button>
@@ -37,6 +37,7 @@
                                     <constraint firstAttribute="height" constant="60" id="2P7-Z7-KUR"/>
                                     <constraint firstItem="4Kb-Hr-6mT" firstAttribute="centerY" secondItem="1HM-Hv-IJI" secondAttribute="centerY" constant="5" id="XII-c0-Fqr"/>
                                     <constraint firstAttribute="trailing" secondItem="UBb-mV-I45" secondAttribute="trailing" constant="8" id="aAr-TO-SUo"/>
+                                    <constraint firstItem="UBb-mV-I45" firstAttribute="centerY" secondItem="4Kb-Hr-6mT" secondAttribute="centerY" id="eL4-af-bfp"/>
                                     <constraint firstItem="4Kb-Hr-6mT" firstAttribute="centerX" secondItem="1HM-Hv-IJI" secondAttribute="centerX" id="sgr-QQ-9kD"/>
                                 </constraints>
                             </view>
