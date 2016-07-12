@@ -57,6 +57,11 @@
                             <constraint firstItem="1HM-Hv-IJI" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="xkB-Xw-Hvb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonMenu" destination="UBb-mV-I45" id="GKo-uR-3cx"/>
+                        <outlet property="tableView" destination="EdC-0F-bSg" id="atW-Bq-keo"/>
+                        <outlet property="titleLabel" destination="4Kb-Hr-6mT" id="PTi-yC-7JJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
