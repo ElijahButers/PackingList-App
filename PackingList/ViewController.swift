@@ -29,6 +29,9 @@ class ViewController: UIViewController {
   @IBOutlet var tableView: UITableView!
   @IBOutlet var buttonMenu: UIButton!
   @IBOutlet var titleLabel: UILabel!
+    
+    @IBOutlet weak var menuHeightConstraint: NSLayoutConstraint!
+    
   
   //MARK: further class variables
   
