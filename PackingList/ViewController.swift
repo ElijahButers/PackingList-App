@@ -47,6 +47,12 @@ class ViewController: UIViewController {
         print(" -> \(con.description)\n")
     }
     isMenuOpen = !isMenuOpen
+    for constraint in titleLabel.superview!.constraints {
+        if constraint.firstItem as? NSObject == titleLabel && constraint.firstAttribute == .CenterX {
+            constraint.constant = isMenuOpen ? -100.0 : 0.0
+            continue
+        }
+    }
     menuHeightConstraint.constant = isMenuOpen ? 200.0 : 60.0
     titleLabel.text = isMenuOpen ? "SelectItem" : "PackingList"
     
