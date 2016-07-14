@@ -66,7 +66,7 @@ class ViewController: UIViewController {
             newConstraint.active = true
             continue
         }
-    }
+}
     menuHeightConstraint.constant = isMenuOpen ? 200.0 : 60.0
     titleLabel.text = isMenuOpen ? "SelectItem" : "PackingList"
     
@@ -75,6 +75,19 @@ class ViewController: UIViewController {
         let angle = self.isMenuOpen ? CGFloat(M_PI_4) : 0.0
         self.buttonMenu.transform = CGAffineTransformMakeRotation(angle)
         }, completion: nil)
+    
+    if isMenuOpen {
+        slider = HorizontalItemList(inView: view)
+        slider.didSelectItem = {index in
+            print("add \(index)")
+            self.items.append(index)
+            self.tableView.reloadData()
+            self.actionToggleMenu(self)
+        }
+        self.titleLabel.superview!.addSubview(slider)
+    } else {
+        slider.removeFromSuperview()
+    }
   }
   
   func showItem(index: Int) {
