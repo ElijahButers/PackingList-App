@@ -99,11 +99,18 @@ class ViewController: UIViewController {
     imageView.layer.masksToBounds = true
     imageView.translatesAutoresizingMaskIntoConstraints = false
     view.addSubview(imageView)
+    
     let conX = imageView.centerXAnchor.constraintEqualToAnchor(view.centerXAnchor)
     let conBottom = imageView.bottomAnchor.constraintEqualToAnchor(view.bottomAnchor, constant: imageView.frame.height)
     let conWidth = imageView.widthAnchor.constraintEqualToAnchor(view.widthAnchor, multiplier: 0.33, constant: -50.0)
     let conHeight = imageView.heightAnchor.constraintEqualToAnchor(imageView.widthAnchor)
     NSLayoutConstraint.activateConstraints([conX, conBottom, conWidth, conHeight])
+    
+    UIView.animateWithDuration(0.8, delay: 0.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.0, options: [], animations: {
+        conBottom.constant = -imageView.frame.size.height/2
+        conWidth.constant = 0.0
+        self.view.layoutIfNeeded()
+        }, completion: nil)
   }
 }
 
